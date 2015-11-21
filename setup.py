@@ -1,3 +1,6 @@
+""" This module is provides the configuration and command line tools for
+distributiing this exmaple project. """
+
 from setuptools import find_packages, setup
 
 long_description = 'get this from README.rst' #TODO: get from README
