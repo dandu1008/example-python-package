@@ -1,0 +1,3 @@
+include LICENSE
+include example_package/data/example_package_data.dat
+recursive-include data *

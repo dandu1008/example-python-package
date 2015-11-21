@@ -1,26 +1,33 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 long_description = 'get this from README.rst' #TODO: get from README
-install_requires = []
+install_requires = [
+        'requests>=2.0'
+        ]
 
 setup(
     name='example-package',
     description='A minimal example of a Python project',
     long_description=long_description,
-    # See: PEP440 for valid version string schemes
+    # See PEP440 for valid version string schemes:
+    # https://www.python.org/dev/peps/pep-0440/
     version='1.2.0',
     url='https://github.com/tylerdave/minimal-python-package',
     author='Dave Forgac',
     author_email='tylerdave@tylerdave.com',
     license='Public Domain',
+    packages=find_packages(exclude=['docs', 'tests']),
+    # If distributing module(s) only, use this instead of packages
+    # py_modules=['example_module']
     install_requires=install_requires,
     extras_require={
         'dev': ['tox'],
         'test': ['coverage'],
         },
     package_data={
-        'example_package': ['exmaple_data.dat'],
+        'example_package': ['exmaple_package_data.dat'],
         },
+    include_package_data=True,
     data_files=[
         ('example_data',['data/example_data.dat']),
         ],
