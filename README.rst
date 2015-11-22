@@ -1,4 +1,4 @@
-minimal-python-package
+example-python-package
 ======================
 
-A very minimal Python project to be used as an example for packaging
+A typical Python project to be used as an example for packaging

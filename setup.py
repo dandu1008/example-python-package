@@ -10,12 +10,12 @@ install_requires = [
 
 setup(
     name='example-package',
-    description='A minimal example of a Python project',
+    description='A typical example of a Python project',
     long_description=long_description,
     # See PEP440 for valid version string schemes:
     # https://www.python.org/dev/peps/pep-0440/
     version='1.2.0',
-    url='https://github.com/tylerdave/minimal-python-package',
+    url='https://github.com/tylerdave/example-python-package',
     author='Dave Forgac',
     author_email='tylerdave@tylerdave.com',
     license='Public Domain',
