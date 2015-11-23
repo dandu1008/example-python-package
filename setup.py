@@ -1,9 +1,12 @@
 """ This module is provides the configuration and command line tools for
 distributiing this exmaple project. """
 
-from setuptools import find_packages, setup
+from codecs import open
+from setuptools import setup
 
-long_description = 'get this from README.rst' #TODO: get from README
+with open('README.rst', 'r', 'utf-8') as f:
+        readme = f.read()
+
 install_requires = [
         'requests>=2.0'
         ]
@@ -11,7 +14,7 @@ install_requires = [
 setup(
     name='example-package',
     description='A typical example of a Python project',
-    long_description=long_description,
+    long_description=readme,
     # See PEP440 for valid version string schemes:
     # https://www.python.org/dev/peps/pep-0440/
     version='1.2.0',
@@ -19,8 +22,8 @@ setup(
     author='Dave Forgac',
     author_email='tylerdave@tylerdave.com',
     license='Public Domain',
-    packages=find_packages(exclude=['docs', 'tests']),
-    # If distributing module(s) only, use this instead of packages
+    packages=['example_package'], # or use find_packages from setuptools
+    # If distributing module(s) only, use py_modules instead of packages
     # py_modules=['example_module']
     install_requires=install_requires,
     extras_require={
