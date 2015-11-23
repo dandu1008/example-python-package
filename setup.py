@@ -37,6 +37,7 @@ setup(
     entry_points={
         'console_scripts': [
             'hello=example_package.cli:main',
+            'get-example=example_package.cli:get_example',
             ],
         },
     # See: https://pypi.python.org/pypi?%3Aaction=list_classifiers
