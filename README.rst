@@ -9,6 +9,6 @@ Usage
 This package provides a `hello` command-line program. Running it produces a
 hello world message.
 
-  >>> hello
+  $ hello
   Hello, World!
 
