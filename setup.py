@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """ This module is provides the configuration and command line tools for
 distributiing this exmaple project. """
 
