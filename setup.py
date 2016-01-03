@@ -13,10 +13,12 @@ install_requires = [
         ]
 
 setup(
+    # See PEP 0426 for valid package names
+    # https://www.python.org/dev/peps/pep-0426/
     name='example-package',
     description='A typical example of a Python project',
     long_description=readme,
-    # See PEP440 for valid version string schemes:
+    # See PEP 0440 for valid version string schemes:
     # https://www.python.org/dev/peps/pep-0440/
     version='1.2.0',
     url='https://github.com/tylerdave/example-python-package',
